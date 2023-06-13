@@ -1,4 +1,14 @@
 /*
+Table of Contents for this file
+=================
+1. isAnagram function
+2. 
+*/
+
+
+
+
+/*
 Write a function that takes 2 strings and checks if they are anagrams of each other
 Anagrams means the letters of one string can be rearranged to form the other string
 
@@ -29,3 +39,4 @@ console.log(isAnagram("hello", "hllof")); // false
 I took help from ChatGPT to write this code - this is the chat link 
 https://chat.openai.com/share/d9036192-7b76-477e-aecb-31568aa855cd 
 */
+

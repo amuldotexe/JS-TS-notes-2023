@@ -3,7 +3,6 @@ Table of Contents
 =================
 1. for loop example
 2. logNumbers function
-3. 
 */
 
 // 1. for loop example

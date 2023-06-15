@@ -165,3 +165,4 @@ function isPalindrome(str) {
 
 console.log("racecar:",isPalindrome("racecar")); // true
 console.log("hello:",isPalindrome("hello")); // true
+

@@ -61,3 +61,48 @@ var fruitCheck = fruitBasket.map(({ fruit, count }) => ({ fruit, isCountMoreThan
 
 // And so, we find ourselves at the end of our journey today, having seen the transformational tales ".map" can spin.
 // It is a tool of versatility, a symbol of JavaScript's power and flexibility, always ready to aid us in our data crafting adventures.
+
+// (In Morgan Freeman's calming voice)
+// Welcome back, dear listener. Today we embark on a journey through the fascinating landscapes of advanced ".map" usage.
+
+// Let's imagine we have a collection of items with nested properties, a small town of residents, if you will.
+var residents = [{ name: 'John', address: { city: 'San Francisco', country: 'USA' }}, { name: 'Paul', address: { city: 'London', country: 'UK' }}];
+
+// Using ".map", we can send a postcard home, retrieving the country of each resident.
+var countries = residents.map(resident => resident.address.country);
+// Now, "countries" holds ['USA', 'UK'].
+
+// Going deeper, let's have an array of functions, each ready to perform their role when called upon.
+var functions = [Math.sin, Math.cos, Math.tan];
+
+// We can use ".map" to apply a number to all these functions, like a maestro guiding an orchestra to perform the same note.
+var results = functions.map(func => func(Math.PI / 2));
+// "results" holds [1, 6.123233995736766e-17, 16331239353195370] - the sine, cosine, and tangent of PI/2.
+
+// Let's venture into asynchronous territory with a list of URLs.
+var urls = ['https://api.example.com/posts', 'https://api.example.com/comments'];
+
+// We can use ".map" with async functions to fetch data from these URLs. 
+// Note: This operation returns an array of Promises, further handling needed with Promise.all.
+var data = urls.map(async url => {
+  var response = await fetch(url);
+  return response.json();
+});
+
+// Stepping into a realm where functions generate functions, let's craft an array of greeting functions.
+var greetings = ['Hello', 'Hi', 'Hey'].map(greeting => {
+  return name => `${greeting}, ${name}!`; // Returns a new function that greets a given name.
+});
+
+// Now, invoking greetings[0]('John') would give us 'Hello, John!'.
+
+// Lastly, let's weave some magic with arrays within arrays.
+var matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+// We can use ".map" to transpose our matrix, swapping rows with columns.
+var transpose = matrix[0].map((_, i) => matrix.map(row => row[i]));
+// "transpose" now holds [[1, 4, 7], [2, 5, 8], [3, 6, 9]].
+
+// There you have it, a variety of tales from the land of ".map", tales of transformation, tales of creation, 
+// and even tales that venture into the realms of the asynchronous. 
+// It's a testament to the power and versatility of JavaScript and the creative potential it offers you.

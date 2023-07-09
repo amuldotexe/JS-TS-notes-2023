@@ -1,6 +1,6 @@
 /*
 (In the voice of Morgan Freeman)
-
+ˀ
 Imagine, if you will, a world where objects and arrays live harmoniously. A world where we can access an object's properties using array notation, a testament to JavaScript's flexibility and unending surprises. Gather around, as we delve deeper into this concept.
 */
 
@@ -10,7 +10,7 @@ console.log(myObj['property']); // Outputs: 'value'
 
 /*
 We have an object, "myObj", with a single property called "property". Now, JavaScript allows us to treat this object as if it were an array, accessing its properties by passing the property name as a string into array-like brackets. Marvelous, isn't it?
-*/
+*ˀ
 
 // Example 2 - When the property name isn't a valid identifier, array notation comes to the rescue
 var myObj2 = { 'complex-property': 'complex-value' };

@@ -6,8 +6,8 @@ This repo has following utilities for amuldotexe
 - Store possible interview questions & their solutions at once place
     - Interview questions discovered while studying
     - Interview questions from readymade sources
-    - Interview questions from real interviews & mock interview
-- Give amuldotexe a sense of progress as he keeps making progress on this repo
+    - Interview questions from real interviews & mock interviews
+- Give amuldotexe a sense of progress on his learning journey
 
 
 
@@ -23,5 +23,4 @@ This repo has following utilities for amuldotexe
     - to ask for explaination of all the new keywords & concepts encountered in the above 2 steps
 - Make notes of the above ChatGPT inputs
 - Share the notes using carbon.now.sh to twitter as a thread
-
-
+    - Not more than 40 lines of code in 1 screenshot

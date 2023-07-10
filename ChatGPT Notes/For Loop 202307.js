@@ -1,3 +1,6 @@
+
+
+
 /* 
 My dear Harry, this first example we're going to discuss is a simple one, a gentle introduction. 
 It's an enchanting charm, if you will, that loops from number 1 to 10 and shows each number in console.
@@ -5,10 +8,21 @@ Just like you'd swish and flick your wand to cast "Wingardium Leviosa" multiple 
 */
 
 function simpleForLoop() {
-    for (let i = 1; i <= 10; i++) {
+    for (let i = 1; i <= 5; i++) {
         console.log(i);
     }
 }
+console.log('Results for simpleForLoop():');
+simpleForLoop();
+/*
+Output:
+1
+2
+3
+4
+5
+ */
+
 
 /*
 Oh Harry, sometimes we need to take bigger strides to cover more ground. 
@@ -20,6 +34,13 @@ function skipCountForLoop() {
         console.log(i);
     }
 }
+console.log('Results for skipCountForLoop():');
+skipCountForLoop();
+/*
+Output:
+
+ */
+
 
 /* 
 Ah, my dear boy, sometimes you have to move in the opposite direction, much like when you travel back in time with Hermione's Time-Turner. 
@@ -27,10 +48,16 @@ In this example, we start from 10 and go to 1, like counting down to a quidditch
 */
 
 function reverseForLoop() {
-    for (let i = 10; i >= 1; i--) {
+    for (let i = 5; i >= 1; i--) {
         console.log(i);
     }
 }
+console.log('Results for reverseForLoop():');
+reverseForLoop();
+/*
+Output:
+
+ */
 
 /* 
 Harry, just as every student in Hogwarts is unique, so too can be every step in our journey. 
@@ -42,6 +69,14 @@ function multiplyForLoop() {
         console.log(i);
     }
 }
+
+console.log('Results for multiplyForLoop():');
+multiplyForLoop();
+/*
+Output:
+
+ */
+
 
 /* 
 Finally, Harry, remember that sometimes, like in the Room of Requirement, what you find inside depends on what you need. 
@@ -55,6 +90,10 @@ function conditionalForLoop() {
         }
     }
 }
+/*
+Output:
+
+ */
 
 
 /*
@@ -88,6 +127,14 @@ function nestedForLoop() {
     }
 }
 
+console.log('Results for nestedForLoop():');
+nestedForLoop();
+/*
+Output:
+
+ */
+
+
 /* 
 Harry, sometimes we need to leave the loop in between when we've found what we were looking for, 
 much like when you found the Philosopher's Stone inside the Mirror of Erised.
@@ -95,13 +142,19 @@ Here we're using a "break" statement to exit the loop when we've found the numbe
 */
 
 function breakForLoop() {
-    for (let i = 1; i <= 10; i++) {
-        if (i === 5) {
+    for (let i = 1; i <= 5; i++) {
+        if (i === 3) {
             break;
         }
         console.log(i);
     }
 }
+console.log('Results for breakForLoop():');
+breakForLoop();
+/*
+Output:
+
+ */
 
 /* 
 Now Harry, consider an instance where you don't want to exit the entire loop but just skip a particular step, 
@@ -110,13 +163,20 @@ Here, we're using a "continue" statement to skip the number 5 and continue with 
 */
 
 function continueForLoop() {
-    for (let i = 1; i <= 10; i++) {
-        if (i === 5) {
+    for (let i = 1; i <= 5; i++) {
+        if (i === 3) {
             continue;
         }
         console.log(i);
     }
 }
+
+console.log('Results for continueForLoop():');
+continueForLoop();
+/*
+Output:
+
+ */
 
 /* 
 Much like a quidditch match, where the sequence of catching the snitch can affect the outcome, 
@@ -133,6 +193,13 @@ function twoDimensionalArrayForLoop() {
     }
 }
 
+console.log('Results for twoDimensionalArrayForLoop():');
+twoDimensionalArrayForLoop();
+/*
+Output:
+
+ */
+
 /* 
 Lastly Harry, remember that the wizarding world is filled with unknown magic, 
 just as JavaScript is filled with unknown features. 
@@ -148,6 +215,14 @@ function objectForLoop() {
     }
 }
 
+console.log('Results for objectForLoop():');
+objectForLoop();
+/*
+Output:
+
+ */
+
+
 /*
 ======================================================================
 ======================================================================
@@ -162,6 +237,7 @@ Advanced to Super-Advanced
 ======================================================================
 ======================================================================
 */
+
 /* 
 Harry, magic is not just about casting spells, it's also about creating and transforming things. 
 In this example, we create a function that uses a for loop to create an array with values from 1 to n, 
@@ -176,6 +252,13 @@ function arrayCreation(n) {
     console.log(arr);
 }
 
+console.log('Results for arrayCreation(5):');
+arrayCreation(5);
+/*
+Output:
+
+ */
+
 /* 
 Harry, my boy, understanding the mysteries of magic often requires looking at things from different perspectives.
 In this next example, we will be using a for loop in conjunction with the ternary operator. 
@@ -188,6 +271,13 @@ function ternaryForLoop(n) {
         console.log(`Number ${i} is ${str}`);
     }
 }
+
+console.log('Results for ternaryForLoop(5):');
+ternaryForLoop(5);
+/*
+Output:
+
+ */
 
 /* 
 Remember Harry, it's our choices that show what we truly are, far more than our abilities.
@@ -204,6 +294,12 @@ function arrayProcessing(arr) {
     }
     console.log(newArr);
 }
+console.log('Results for arrayProcessing([1, 2, 3, -1, -2, -3,4]):');
+arrayProcessing([1, 2, 3, -1, -2, -3,4]);
+/*
+Output:
+
+ */
 
 /* 
 Harry, remember how we found the Chamber of Secrets?
@@ -222,6 +318,14 @@ function dynamicFunctionDefinition(n) {
     functions.forEach(func => func());
 }
 
+console.log('Results for dynamicFunctionDefinition(5):');
+dynamicFunctionDefinition(5);
+/*
+Output:
+
+ */
+
+
 /* 
 Finally Harry, let's face a more challenging task, similar to the tasks you faced during the Triwizard Tournament.
 Here, we are going to sort an array of objects based on a particular property.
@@ -229,7 +333,7 @@ This can be compared to sorting the Triwizard champions based on their performan
 */
 
 function objectArraySorting() {
-    let arr = [{name: 'Harry', age: 17}, {name: 'Ron', age: 18}, {name: 'Hermione', age: 19}];
+    let arr = [{name: 'Harry', age: 21}, {name: 'Ron', age: 18}, {name: 'Hermione', age: 19}];
     for (let i = 0; i < arr.length; i++) {
         for (let j = i + 1; j < arr.length; j++) {
             if (arr[i].age > arr[j].age) {
@@ -241,6 +345,14 @@ function objectArraySorting() {
     }
     console.log(arr);
 }
+
+console.log('Results for objectArraySorting():');
+objectArraySorting();
+/*
+Output:
+
+ */
+
 /*
 ======================================================================
 ======================================================================
@@ -272,6 +384,14 @@ function deepDive(obj) {
     }
 }
 
+console.log('deepDive results are');
+deepDive({a: 1, b: {c: 2, d: {e: 3}}});
+
+/*
+Output:
+
+*/
+
 /* 
 Ah, the beauty of magic is that it can transform things in miraculous ways, Harry. 
 Here, we use a for loop to transform one data structure into another - converting an array of arrays into an object.
@@ -286,27 +406,16 @@ function transformArrayToObject(arr) {
     console.log(obj);
 }
 
-/* 
-Harry, as we discussed the Patronus Charm, it's not just about the words but also the happy memory and intention. 
-Similarly, the efficiency of code isn't just about syntax but also its performance. 
-In this example, we optimize a common task of finding an element in a sorted array using a variant of for loop known as binary search.
-*/
-
-function binarySearch(arr, value) {
-    let start = 0, end = arr.length - 1;
-    while (start <= end) {
-        let mid = Math.floor((start + end) / 2);
-        if (arr[mid] === value) {
-            console.log(`Found ${value} at index ${mid}`);
-            return;
-        } else if (arr[mid] < value) {
-            start = mid + 1;
-        } else {
-            end = mid - 1;
-        }
-    }
-    console.log(`Value ${value} not found`);
+console.log('transformArrayToObject results are');
+transformArrayToObject([['name', 'Harry Potter'], ['house', 'Gryffindor'], ['year', 'First']]);
+/*
+Output:
+{
+    name: 'Harry Potter',
+    house: 'Gryffindor',
+    year: 'First'
 }
+*/
 
 /* 
 Every witch or wizard, Harry, needs to understand the strengths and limitations of their spells. 
@@ -319,6 +428,17 @@ function useForEach(arr) {
         console.log(`Element ${index} is ${value}`);
     });
 }
+
+console.log('useForEach results are');
+useForEach(['Hogwarts', 'Gryffindor', 'Hufflepuff', 'Ravenclaw', 'Slytherin']);
+
+/*
+Element 0 is Hogwarts
+Element 1 is Gryffindor
+Element 2 is Hufflepuff
+Element 3 is Ravenclaw
+Element 4 is Slytherin
+ */
 
 /* 
 Lastly, Harry, the magic of Transfiguration is not just in changing the appearance of things but their very nature. 
@@ -333,3 +453,12 @@ function transformArray(arr, transformFunction) {
     }
     console.log(newArr);
 }
+
+console.log('transformArray results are');
+transformArray([1, 2, 3, 4, 5], (x) => x * 2);
+
+/*
+Output:
+
+*/
+

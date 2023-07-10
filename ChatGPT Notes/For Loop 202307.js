@@ -38,7 +38,11 @@ console.log('Results for skipCountForLoop():');
 skipCountForLoop();
 /*
 Output:
-
+1
+3
+5
+7
+9
  */
 
 
@@ -56,7 +60,11 @@ console.log('Results for reverseForLoop():');
 reverseForLoop();
 /*
 Output:
-
+5
+4
+3
+2
+1
  */
 
 /* 
@@ -74,7 +82,10 @@ console.log('Results for multiplyForLoop():');
 multiplyForLoop();
 /*
 Output:
-
+1
+2
+4
+8
  */
 
 
@@ -90,9 +101,15 @@ function conditionalForLoop() {
         }
     }
 }
+console.log('Results for conditionalForLoop():');
+conditionalForLoop();
 /*
 Output:
-
+1
+3
+5
+7
+9
  */
 
 
@@ -131,7 +148,11 @@ console.log('Results for nestedForLoop():');
 nestedForLoop();
 /*
 Output:
-
+* 
+* * 
+* * * 
+* * * * 
+* * * * *
  */
 
 
@@ -153,7 +174,8 @@ console.log('Results for breakForLoop():');
 breakForLoop();
 /*
 Output:
-
+1
+2
  */
 
 /* 
@@ -175,7 +197,10 @@ console.log('Results for continueForLoop():');
 continueForLoop();
 /*
 Output:
-
+1
+2
+4
+5
  */
 
 /* 
@@ -197,7 +222,12 @@ console.log('Results for twoDimensionalArrayForLoop():');
 twoDimensionalArrayForLoop();
 /*
 Output:
-
+1
+2
+3
+4
+5
+6
  */
 
 /* 
@@ -219,7 +249,9 @@ console.log('Results for objectForLoop():');
 objectForLoop();
 /*
 Output:
-
+name: Harry Potter
+house: Gryffindor
+year: First
  */
 
 
@@ -256,7 +288,7 @@ console.log('Results for arrayCreation(5):');
 arrayCreation(5);
 /*
 Output:
-
+[ 1, 2, 3, 4, 5 ]
  */
 
 /* 
@@ -276,7 +308,11 @@ console.log('Results for ternaryForLoop(5):');
 ternaryForLoop(5);
 /*
 Output:
-
+Number 1 is Odd
+Number 2 is Even
+Number 3 is Odd
+Number 4 is Even
+Number 5 is Odd
  */
 
 /* 
@@ -298,7 +334,7 @@ console.log('Results for arrayProcessing([1, 2, 3, -1, -2, -3,4]):');
 arrayProcessing([1, 2, 3, -1, -2, -3,4]);
 /*
 Output:
-
+[ 2, 4, 6, 8 ]
  */
 
 /* 
@@ -322,7 +358,11 @@ console.log('Results for dynamicFunctionDefinition(5):');
 dynamicFunctionDefinition(5);
 /*
 Output:
-
+Function 1 called
+Function 2 called
+Function 3 called
+Function 4 called
+Function 5 called
  */
 
 
@@ -350,7 +390,11 @@ console.log('Results for objectArraySorting():');
 objectArraySorting();
 /*
 Output:
-
+[
+  { name: 'Ron', age: 18 },
+  { name: 'Hermione', age: 19 },
+  { name: 'Harry', age: 21 }
+]
  */
 
 /*
@@ -389,6 +433,9 @@ deepDive({a: 1, b: {c: 2, d: {e: 3}}});
 
 /*
 Output:
+a: 1
+c: 2
+e: 3
 
 */
 
@@ -459,6 +506,6 @@ transformArray([1, 2, 3, 4, 5], (x) => x * 2);
 
 /*
 Output:
-
+[ 2, 4, 6, 8, 10 ]
 */
 

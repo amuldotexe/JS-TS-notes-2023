@@ -231,7 +231,7 @@ Output:
  */
 
 /* 
-Lastly Harry, remember that the wizarding world is filled with unknown magic, 
+Harry, remember that the wizarding world is filled with unknown magic, 
 just as JavaScript is filled with unknown features. 
 Here we're going to use a for loop to traverse an object's properties, just like exploring the many secrets hidden within the Hogwarts castle.
 */

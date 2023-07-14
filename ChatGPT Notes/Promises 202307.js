@@ -8,7 +8,7 @@ Let's look at a simple example, akin to casting your first Lumos charm.
 
 function example1() {
     let p = new Promise((resolve, reject) => {
-      let a = 1 + 1; 
+      let a = 1; 
       /* 
       Now, a Promise can either resolve (fulfill its duties) or be rejected (fail its mission). 
       Here we are making a simple calculation. If it sums up to 2, we'll say our spell (Promise) worked.

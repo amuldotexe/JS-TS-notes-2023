@@ -296,8 +296,23 @@ example7();
 Now, let's get back to individual Promises and discuss a useful method: Promise.prototype.finally. It allows us to perform some action when the Promise is settled, irrespective of its outcome. It's like cleaning up the mess after a duel, regardless of who won.
 */
 
+  function Cruciatus() {
+    return new Promise((resolve, reject) => {
+      let chanceOfSuccess = Math.random();
+      /* 
+      This time, the success of our spell (Promise) depends on chance. If our random value is greater than 0.5, our spell succeeds.
+      */
+      if(chanceOfSuccess > 0.5) {
+        resolve('Cruciatus!');
+      } else {
+        reject('Spell failed...');
+      }
+    });
+  }
+
+
 function example8() {
-  let spellPromise = spellAvadaKedavra(); // Refer to the function defined in earlier example
+  let spellPromise = Cruciatus(); // Refer to the function defined in earlier example
 
   spellPromise.then(value => {
     console.log(`The result of the spell: ${value}`);
@@ -308,9 +323,11 @@ function example8() {
   });
 }
 
+
+
 example8();
 // Console Output (randomly): 
-// The result of the spell: Avada Kedavra!
+// The result of the spell: Cruciatus!
 // The duel is over.
 // or: 
 // The result of the spell: Spell failed...
